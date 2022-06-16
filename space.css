@@ -1,0 +1,408 @@
+@font-face {
+    font-family: 'd-dindin-bold';
+    src: url('/fonts/d-din-bold-webfont.woff2') format('woff2'),
+        url('/fonts/d-din-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'd-dinregular';
+    src: url('/fonts/d-din-webfont.woff2') format('woff2'),
+         url('/fonts/d-din-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'd-din_expregular';
+    src: url('/fonts/d-dinexp-webfont.woff') format('woff2'),
+         url('/fonts/d-dinexp-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: 'd-din_expdinexp-bold';
+    src: url('/fonts/d-dinexp-webfont.woff') format('woff2'),
+         url('/fonts/d-dinexp-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: 'd-din_condenseddinCnBd';
+    src: url('/fonts/d-dinexp-webfont.woff') format('woff2'),
+         url('/fonts/d-dinexp-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal; 
+}
+
+
+:root{
+    --font-family1: 'd-dindin-bold', Arial, Verdana, sans-serif;
+    --font-family2: 'd-dinregular', Arial, Verdana, sans-serif;
+    --font-family3: 'd-din_condenseddinCnBd', Arial, Verdana, sans-serif;
+    --font-family4: 'd-din_expregular', Arial, Verdana, sans-serif;
+    --font-family5: 'd-din_expdinexp-bold', Arial, Verdana, sans-serif;
+    --text-color: rgb(255, 255, 255);
+    --ionicon-stroke-weight1: 24px;
+    --ionicon-stroke-weight2: px;
+}
+  
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+  
+:root{
+    --variable-name: value;
+}
+
+ul{
+    list-style: none;
+}
+
+hr{
+    opacity: 20%;
+}
+  
+a{
+    text-decoration: none;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+nav{
+    background-color: transparent;
+}
+
+.hamburger{
+    float: right;
+    padding: 2.7% 4% 0 0;
+    background-color: transparent;
+    border: none;
+    color: var(--text-color);
+    font-size: 28px;
+    font: 700;
+    cursor: pointer;
+    position: sticky;
+    z-index: 1;
+}
+
+.burger-close{
+    display: none;
+    z-index: 1;
+}
+
+.logo{
+    margin: 2.5% 0 0 3%;
+    cursor: pointer;
+}
+
+.up{
+    display: flex;
+    margin: -1.5% 0 0 22%;
+    gap: 2.8%;
+    font-family: var(--font-family1);
+    font-size: 14px;
+}
+
+.upshop{
+    margin-left: 13.5rem;
+}
+
+.up a{
+    position: relative;
+    color: var(--text-color);
+}
+  
+.up li a:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--text-color);
+    visibility: visible;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.3s ease-in-out;
+}
+
+.up li a:hover:after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.right{
+    float: right;
+    margin: -5% -7%;
+    transform: translateX(120%);
+    transition: transform 0.8s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    padding: 7% 5% 24% 4%;
+    text-align: right;
+    font-family: var(--font-family2);
+}
+
+.showRight{
+    transform: translateX(0);
+}
+
+.a:hover a{
+    color: gray;
+}
+
+.right li{
+    padding: 5% 0 5% 0;
+}
+
+hr{
+    width: 15rem;
+}
+
+.rightall{
+    background-color: black;
+    float: right;
+    transform: translateX(120%);
+    transition: transform 0.8s;
+    font-family: var(--font-family2);
+    text-align: right;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    padding: 8% 5% 6% 11.5%;
+    margin: -7% -8%;
+    display: none; 
+}
+
+.showRightAll{
+    transform: translateX(0);
+}
+
+.b:hover a{
+    color: gray;
+    transition: 0.8s ease-in-out;
+}
+
+.rightall li{
+    padding: 5% 0 7.2% 0;
+}
+
+.smallwidth{
+    display: none;
+}
+
+.launch-class{
+    padding: 25% 0 7% 3.5%;
+    color: var(--text-color);
+}
+
+.launch-class h2{
+    font-family: var(--font-family1);
+    font-size: 50px;
+}
+
+.launch-class h4{
+    font-family: var(--font-family2);
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.rewatch{
+    margin-top: 3%;
+}
+
+.rewatch a{
+    padding: 15px 45px 15px 45px;
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
+    font-family: var(--font-family1);
+    font-weight: 900;
+    box-shadow: inset 10 10 10 10 var(--text-color);
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+.rewatch :hover {
+    display: inline;
+    color: black;
+    box-shadow: inset 180px 0 0 1px var(--text-color);
+}
+
+.scroll-down{
+    color: var(--text-color);
+    text-align: center;
+}
+
+.icon-arrow-scroll{
+    font-size: 38px;
+    color: var(--text-color);
+    -webkit-animation: scrolling 3s ease infinite;
+    -moz-animation: scrolling 3s ease infinite;
+    -o-animation: scrolling 3s ease infinite;
+    animation: scrolling 3s ease infinite;
+}
+  
+@keyframes scrolling{
+    0%{
+      transform: translate(0);
+    }
+    50%{
+      transform: translate(0, 10px);
+    }
+    100%{
+      transform: translate(0);
+    }
+}
+
+.section1{
+    background-image: url(/images/one.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+.section2{
+    background-image: url(/images/two.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+.section3{
+    background-image: url(/images/three.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+.section4{
+    background-image: url(/images/four.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+.section5{
+    background-image: url(/images/five.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+.section6{
+    background-image: url(/images/six.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+footer{
+    background-color: black;
+    display: flex;
+    font-family: var(--font-family1);
+}
+  
+footer p{
+    color: gray;
+    font-size: 11px;
+}
+  
+footer ul{
+    font-size: 11px;
+}
+
+.foot{
+    position: absolute;
+    margin-top: 3%;
+    margin-left: 22%;
+}
+  
+.foot2{
+    position: absolute;
+    margin-left: 42%;
+    margin-top: 4%;
+    display: none;
+}
+  
+.socials{
+    display: flex;
+    margin: 3% 20% 3% 33%;
+    gap: 30px;
+}
+  
+.socials :hover{
+    color: gray;
+    transition: 0.8s ease-in-out;
+}
+
+@media screen and (max-width: 768px){
+    
+    .up{
+        display: none;
+    }
+
+    .icon-arrow-scroll{
+        display: none;
+    }
+
+    .right{
+        display: none;
+    }
+
+    .rightall{
+        display: block;
+    } 
+
+    .logo{
+        position: sticky;
+        z-index: 1;
+        margin: 2% 0 0 32%;
+        /* z-index: 99; */
+    }
+
+    .launch-class{
+        padding: 42% 0 20% 7%;
+        color: var(--text-color);
+    }
+
+    .rewatch{
+        margin-top: 6%;
+    }
+
+    .largewidth{
+        display: none
+    }
+    
+    .smallwidth{
+        display: block;
+    }
+
+    .foot{
+        display: none;
+    }
+
+    .foot2{
+        display: block;
+        margin-top: 4%;
+        font-size: 12px;
+    }
+
+    .socials{
+        display: flex;
+        margin: 8%  0 6% 10%;
+        gap: 40px;
+    }
+}
+    
+@media screen and (max-width: 420px){
+    .logo{
+        width: 20%;
+        margin-left: 38%;
+    }
+}
+      
+
