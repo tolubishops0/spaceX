@@ -1,39 +1,39 @@
 @font-face {
     font-family: 'd-dindin-bold';
-    src: url('./fonts/d-din-bold-webfont.woff2') format('woff2'),
-        url('./fonts/d-din-bold-webfont.woff') format('woff');
+    src: url('/fonts/d-din-bold-webfont.woff2') format('woff2'),
+        url('/fonts/d-din-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'd-dinregular';
-    src: url('./fonts/d-din-webfont.woff2') format('woff2'),
-         url('./fonts/d-din-webfont.woff') format('woff');
+    src: url('/fonts/d-din-webfont.woff2') format('woff2'),
+         url('/fonts/d-din-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'd-din_expregular';
-    src: url('./fonts/d-dinexp-webfont.woff') format('woff2'),
-         url('./fonts/d-dinexp-webfont.woff') format('woff');
+    src: url('/fonts/d-dinexp-webfont.woff') format('woff2'),
+         url('/fonts/d-dinexp-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal; 
 }
 
 @font-face {
     font-family: 'd-din_expdinexp-bold';
-    src: url('./fonts/d-dinexp-webfont.woff') format('woff2'),
-         url('./fonts/d-dinexp-webfont.woff') format('woff');
+    src: url('/fonts/d-dinexp-webfont.woff') format('woff2'),
+         url('/fonts/d-dinexp-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal; 
 }
 
 @font-face {
     font-family: 'd-din_condenseddinCnBd';
-    src: url('./fonts/d-dinexp-webfont.woff') format('woff2'),
-         url('./fonts/d-dinexp-webfont.woff') format('woff');
+    src: url('/fonts/d-dinexp-webfont.woff') format('woff2'),
+         url('/fonts/d-dinexp-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal; 
 }
@@ -147,9 +147,10 @@ nav{
     right: 0;
     bottom: 0;
     background-color: black;
-    padding: 7% 5% 24% 4%;
+    padding: 7% 5% 4% 16%;
     text-align: right;
     font-family: var(--font-family2);
+    display: none;
 }
 
 .showRight{
@@ -161,14 +162,11 @@ nav{
 }
 
 .right li{
-    padding: 5% 0 5% 0;
-}
-
-hr{
-    width: 15rem;
+    padding: 5% 0 30% 0;
 }
 
 .rightall{
+    /* position: relative;
     background-color: black;
     float: right;
     transform: translateX(120%);
@@ -180,9 +178,20 @@ hr{
     right: 0;
     bottom: 0;
     background-color: black;
-    padding: 8% 5% 6% 11.5%;
-    margin: -7% -8%;
-    display: none; 
+    padding: 13% 5% 6% 20%; */
+    float: right;
+    position: absolute;
+    text-align: right;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-family: var(--font-family2);
+    background-color: black;
+    padding: 5% 5% 5% 30%;
+    margin-left: 40%;
+    transform: translateX(120%);
+    transition: transform 0.8s;
 }
 
 .showRightAll{
@@ -195,7 +204,7 @@ hr{
 }
 
 .rightall li{
-    padding: 5% 0 7.2% 0;
+   padding-top: 15%;
 }
 
 .smallwidth{
@@ -265,37 +274,37 @@ hr{
 }
 
 .section1{
-    background-image: url(./images/one.jpg);
+    background-image: url(/images/one.jpg);
     background-size: cover;
     background-position: top;
 }
 
 .section2{
-    background-image: url(./images/two.jpg);
+    background-image: url(/images/two.jpg);
     background-size: cover;
     background-position: top;
 }
 
 .section3{
-    background-image: url(./images/three.jpg);
+    background-image: url(/images/three.jpg);
     background-size: cover;
     background-position: top;
 }
 
 .section4{
-    background-image: url(./images/four.jpg);
+    background-image: url(/images/four.jpg);
     background-size: cover;
     background-position: top;
 }
 
 .section5{
-    background-image: url(./images/five.jpg);
+    background-image: url(/images/five.jpg);
     background-size: cover;
     background-position: top;
 }
 
 .section6{
-    background-image: url(./images/six.jpg);
+    background-image: url(/images/six.jpg);
     background-size: cover;
     background-position: top;
 }
@@ -316,6 +325,7 @@ footer ul{
 }
 
 .foot{
+    font-weight: lighter;
     position: absolute;
     margin-top: 3%;
     margin-left: 22%;
@@ -339,6 +349,14 @@ footer ul{
     transition: 0.8s ease-in-out;
 }
 
+.sup2{
+    position: absolute;
+    margin-left: 40%;
+    margin-top: 5%;
+    display: none;
+}
+
+
 @media screen and (max-width: 768px){
     
     .up{
@@ -354,21 +372,35 @@ footer ul{
     }
 
     .rightall{
-        display: block;
+        display: none;
     } 
 
     .logo{
         position: sticky;
         z-index: 1;
         margin: 2% 0 0 32%;
-        /* z-index: 99; */
     }
 
     .launch-class{
-        padding: 42% 0 20% 7%;
+        position: relative;
+        padding: 25% 0 7% 3.5%;
         color: var(--text-color);
     }
-
+    
+    .launch-class h2{
+        font-family: var(--font-family1);
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 30px;
+    }
+    
+    .launch-class h4{
+        font-family: var(--font-family2);
+        font-size: 16px;
+        line-height: 25px;
+        font-weight: lighter;
+    }
+    
     .rewatch{
         margin-top: 6%;
     }
@@ -388,14 +420,16 @@ footer ul{
     .foot2{
         display: block;
         margin-top: 4%;
-        font-size: 12px;
+        font-size: 11px;
     }
 
     .socials{
         display: flex;
-        margin: 8%  0 6% 10%;
-        gap: 40px;
+        margin: 8% 0 6% 15%;
+        gap: 20px;
+        font-size: 11px;
     }
+
 }
     
 @media screen and (max-width: 420px){
@@ -403,6 +437,32 @@ footer ul{
         width: 20%;
         margin-left: 38%;
     }
+
+    .sup2{
+        margin-bottom: 1%;
+        display: block;
+    }
+
+    .foot2{
+        display: block;
+        margin-top: 4%;
+        font-size: 12px;
+    }
+
+    .right{
+        display: none;
+    }
+
+    .rightall{
+        display: none;
+    } 
+
+    .socials{
+        margin: 8% 0 6% 5%;
+        gap: 10px;
+        font-size: 10px;
+    }
 }
+
       
 
