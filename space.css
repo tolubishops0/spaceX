@@ -274,7 +274,7 @@ nav{
 }
 
 .section1{
-    background-image: url(images/one.jpg);
+    background-image: url(./images/one.jpg);
     background-size: cover;
     background-position: top;
 }
