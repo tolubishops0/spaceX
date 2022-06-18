@@ -1,39 +1,39 @@
 @font-face {
     font-family: 'd-dindin-bold';
-    src: url('/fonts/d-din-bold-webfont.woff2') format('woff2'),
-        url('/fonts/d-din-bold-webfont.woff') format('woff');
+    src: url('fonts/d-din-bold-webfont.woff2') format('woff2'),
+        url('fonts/d-din-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'd-dinregular';
-    src: url('/fonts/d-din-webfont.woff2') format('woff2'),
-         url('/fonts/d-din-webfont.woff') format('woff');
+    src: url('fonts/d-din-webfont.woff2') format('woff2'),
+         url('fonts/d-din-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'd-din_expregular';
-    src: url('/fonts/d-dinexp-webfont.woff') format('woff2'),
-         url('/fonts/d-dinexp-webfont.woff') format('woff');
+    src: url('fonts/d-dinexp-webfont.woff') format('woff2'),
+         url('fonts/d-dinexp-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal; 
 }
 
 @font-face {
     font-family: 'd-din_expdinexp-bold';
-    src: url('/fonts/d-dinexp-webfont.woff') format('woff2'),
-         url('/fonts/d-dinexp-webfont.woff') format('woff');
+    src: url('fonts/d-dinexp-webfont.woff') format('woff2'),
+         url('fonts/d-dinexp-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal; 
 }
 
 @font-face {
     font-family: 'd-din_condenseddinCnBd';
-    src: url('/fonts/d-dinexp-webfont.woff') format('woff2'),
-         url('/fonts/d-dinexp-webfont.woff') format('woff');
+    src: url('fonts/d-dinexp-webfont.woff') format('woff2'),
+         url('fonts/d-dinexp-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal; 
 }
@@ -166,19 +166,6 @@ nav{
 }
 
 .rightall{
-    /* position: relative;
-    background-color: black;
-    float: right;
-    transform: translateX(120%);
-    transition: transform 0.8s;
-    font-family: var(--font-family2);
-    text-align: right;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: black;
-    padding: 13% 5% 6% 20%; */
     float: right;
     position: absolute;
     text-align: right;
@@ -280,31 +267,31 @@ nav{
 }
 
 .section2{
-    background-image: url(/images/two.jpg);
+    background-image: url(images/two.jpg);
     background-size: cover;
     background-position: top;
 }
 
 .section3{
-    background-image: url(/images/three.jpg);
+    background-image: url(images/three.jpg);
     background-size: cover;
     background-position: top;
 }
 
 .section4{
-    background-image: url(/images/four.jpg);
+    background-image: url(images/four.jpg);
     background-size: cover;
     background-position: top;
 }
 
 .section5{
-    background-image: url(/images/five.jpg);
+    background-image: url(images/five.jpg);
     background-size: cover;
     background-position: top;
 }
 
 .section6{
-    background-image: url(/images/six.jpg);
+    background-image: url(images/six.jpg);
     background-size: cover;
     background-position: top;
 }
