@@ -7,6 +7,7 @@ const hamburger = document.querySelector('.hamburger');
 const burgerOpen = document.querySelector('.burger-open');
 const burgerClose = document.querySelector('.burger-close');
 const mediaQuery = window.matchMedia('(max-width: 768px)') ;
+const showrightAll = document.querySelector('.showRight');
 
 hamburger.addEventListener('click', toggleMenu);
 
@@ -18,6 +19,7 @@ function toggleMenu(){
                 burgerOpen.style.display = 'block';
             } else {
                 rightAll.classList.add('showRightAll');
+                rightAll.style.display = 'block'
                 burgerClose.style.display = 'block';
                 burgerOpen.style.display = 'none';
             }
@@ -29,6 +31,7 @@ function toggleMenu(){
             upShop.style.display = 'block';
         } else {
             right.classList.add('showRight');
+            right.style.display = 'block'
             burgerClose.style.display = 'block';
             burgerOpen.style.display = 'none';
             upShop.style.display = 'none';
